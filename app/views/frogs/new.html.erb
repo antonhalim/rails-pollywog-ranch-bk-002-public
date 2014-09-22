@@ -1,0 +1,15 @@
+<h1>Create a new frog</h1>
+<form action="/frogs" method="post">
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name">
+  <label for="color">Color</label>
+  <input type="text" id="color" name="color">
+  <label for="lives">Lives</label>
+  <select id="lives" name="pond_id">
+    <% @ponds.each do |pond| %>
+      <option value="<%= pond.id %>"><%= pond.name %></option>
+    <% end %>
+  </select>
+  <input type="submit" value="create">
+</form><br>
+<a href="/frogs">Cancel</a>

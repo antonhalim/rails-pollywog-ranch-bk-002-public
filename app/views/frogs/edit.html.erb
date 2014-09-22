@@ -1,0 +1,15 @@
+<h1>Edit <%= @frog.name %></h1>
+<form action="/frogs/<%= @frog.id %>/update" method="post">
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" placeholder="<%= @frog.name %>">
+  <label for="color">Color</label>
+  <input type="text" id="color" name="color" placeholder="<%= @frog.color %>">
+  <label for="lives">Lives</label>
+  <select id="lives" name="pond_id">
+    <% @ponds.each do |pond| %>
+      <option value="<%= pond.id %>"><%= pond.name %></option>
+    <% end %>
+  </select>
+  <input type="submit" value="update">
+</form><br>
+<a href="/frogs">Cancel</a>

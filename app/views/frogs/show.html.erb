@@ -1,0 +1,15 @@
+<h1><%= @frog.name %> Frog</h1>
+<p>Color: <%= @frog.color %></p>
+<p>Lives: <a href="/ponds/<%= @frog.pond.id %>"><%= @frog.pond.name %></a></p>
+<% unless @frog.tadpoles.empty? %>
+  <h2>Children</h2>
+  <ol>
+    <% @frog.tadpoles.each do |tadpole| %>
+      <li><a href="/tadpoles/<%= tadpole.id %>"><%= tadpole.name %></a></li>
+    <% end %>
+  </ol><br>
+<% end %>
+<p><strong><a href="/frogs/<%= @frog.id %>/tadpoles/new">Create new tadpole baby</a></strong></p>
+<a href="/frogs">Back</a> | 
+<a href="/frogs/<%= @frog.id %>/edit">Edit</a> | 
+<a href="/frogs/<%= @frog.id %>/destroy">Delete</a>

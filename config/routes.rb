@@ -1,4 +1,18 @@
 Rails.application.routes.draw do
+  get 'frogs/new'
+
+  get 'frogs/create'
+
+  get 'frogs/update'
+
+  get 'frogs/edit'
+
+  get 'frogs/destroy'
+
+  get 'frogs/index'
+
+  get 'frogs/show'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
