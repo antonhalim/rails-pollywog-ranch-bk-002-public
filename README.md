@@ -10,28 +10,26 @@ resources: 4
 
 ## Goal
 
-Help Frog Rancher Darryl categorize and track all the ponds, frogs, and tadpoles on his ranch. To do this you will fill in the missing ActiveRecord associations and controller actions needed to form working relationships between the models.
+Help Frog Rancher Darryl categorize and track all the ponds, frogs, and tadpoles on his ranch. To do this you will create models and fill in the missing ActiveRecord associations.
 
 ## Background 
 
-After speaking with Darryl he has informed us that he has several ponds on his ranch. Each pond has different frogs that live there. Some of those frogs have tadpole babies. The frogs all have the ability to have tadpoles at any given time and the tadpoles have the ability to evolve into frogs at any time. 
+After speaking with Darryl he has informed us that he has several ponds on his ranch. Each pond has different frogs that live there. Some of those frogs have tadpole babies. The frogs all have the ability to have tadpoles at any given time and the tadpoles have the ability to metamorphosize into frogs at any time. 
+
 ## Instructions
 
-# Part 1 - Associations
+#### Models and Associations
+* Run `rspec` to see what course to take. Keep in mind that for the association of tadpoles belonging to a pond through frog, you'll have to [delegate](http://stackoverflow.com/a/11457714).
+* If you get stuck refer to [Rails Active Record Documentation](http://guides.rubyonrails.org/active_record_basics.html) or take a look at the included solution branch with completed code.
+* You can refer to this link as a quick reference for the Rails 4 folder structure along the way: [http://www.tutorialspoint.com/ruby-on-rails/rails-directory-structure.htm](http://www.tutorialspoint.com/ruby-on-rails/rails-directory-structure.htm)
+* When your finished and all the specs are passing, go ahead and run the following commands from your terminal:
+  * rake db:migrate
+  * rake db:seed
+  * rails s
+* Then hit up the app [here](http://localhost:3000/).
+* Think about how you would get a tadpole to evolve. Click on any tadpole and make it evolve. Did the app go about evolving tadpoles in the same way you would? For more details about evolving to a frog, 
 
-1. Fork this repo then clone that fork down to your local machine.
-2. Run `bundle install`
-3. Read this text:
-  * 
-4. Run `rspec`
-5. For the association of tadpoles belonging to a pond through frog, you'll have to [delegate](http://stackoverflow.com/a/11457714).
-5. If you get stuck refer to [Rails Active Record Documentation](http://guides.rubyonrails.org/active_record_basics.html) or take a look at the included solution branch with completed code.
-6. You can refer to this link as a quick reference for the Rails 4 folder structure along the way: [http://www.tutorialspoint.com/ruby-on-rails/rails-directory-structure.htm](http://www.tutorialspoint.com/ruby-on-rails/rails-directory-structure.htm)
-7. Link Helpers: [http://api.rubyonrails.org/classes/ActionView/Helpers/UrlHelper.html#method-i-link_to](http://api.rubyonrails.org/classes/ActionView/Helpers/UrlHelper.html#method-i-link_to)
-8. Form Helpers: [http://guides.rubyonrails.org/form_helpers.html](http://guides.rubyonrails.org/form_helpers.html)
-
-
-When your finished and all the specs are passing, push your code up to your remote and submit a pull request. Check back later on [Progress](progress.flatironschoo.com) to see if your code passes.
+Check out a tadpole and get it to evolve.
 
 ## Resources
 * [Stack Overflow](http://stackoverflow.com/) - [Delegation](http://stackoverflow.com/a/11457714)

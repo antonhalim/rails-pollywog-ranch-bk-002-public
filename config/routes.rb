@@ -7,12 +7,12 @@ Rails.application.routes.draw do
   get '/ponds/:id/destroy', to: 'ponds#destroy'
   get '/frogs/:id/destroy', to: 'frogs#destroy'
   get '/tadpoles/:id/destroy', to: 'tadpoles#destroy'
-  get '/tadpoles/:id/evolve', to: 'tadpoles#evolve'
+  get '/tadpoles/:id/metamorphosize', to: 'tadpoles#metamorphosize'
 
   # resources
   resources :ponds
 
-  resources :tadpoles, :only => [:index, :show, :edit, :update, :destroy, :evolve, :create]
+  resources :tadpoles, :only => [:index, :show, :edit, :update, :destroy, :metamorphosize, :create]
 
   # nested resources
   resources :frogs do

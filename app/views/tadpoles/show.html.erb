@@ -1,7 +1,7 @@
 <div class="card">
   <h1><%= @tadpole.name %> the Tadpole</h1>
   <p>
-    <a href="/tadpoles/<%= @tadpole.id %>/evolve" class="btn btn-primary">Evolve to frog</a>
+    <a href="/tadpoles/<%= @tadpole.id %>/metamorphosize" class="btn btn-primary">Become to frog</a>
   </p>
   <p>Color: <%= @tadpole.color %></p>
   <p>Parent: <a href="/frogs/<%= @tadpole.frog.id %>"><%= @tadpole.frog.name %></a></p>
