@@ -27,13 +27,11 @@ After speaking with Darryl he has informed us that he has several ponds on his r
   * rake db:seed
   * rails s
 * Then hit up the app [here](http://localhost:3000/).
-* Think about how you would get a tadpole to evolve. Click on any tadpole and make it evolve. Did the app go about evolving tadpoles in the same way you would? For more details about evolving to a frog, 
-
-Check out a tadpole and get it to evolve.
+* Think about how you would get a tadpole to metamorphosize. Click on any tadpole and make it metamorphosize. Did the app go about metamorphosizing tadpoles in the same way you would have? For more details about metamorphosize into a frog, see `config/routes.rb` and `app/controllers/tadpoles_controller.rb`.
+* Think about how you would get a frog to have tadpole babies. Click on any frog and make it have a baby. Did the app go about making baby tadpoles in the same way you would have? For more details about metamorphosize into a frog, see `config/routes.rb` and `views/frogs/show.html.erb`. You can learn more about nested resources below.
 
 ## Resources
 * [Stack Overflow](http://stackoverflow.com/) - [Delegation](http://stackoverflow.com/a/11457714)
 * [Pivotal Labs](http://pivotallabs.com/) - [Delgation](http://pivotallabs.com/rails-delegates-are-even-more-useful-than-i-knew/)
 * [Tutorials Point: Ruby on Rails](http://www.tutorialspoint.com/ruby-on-rails/) - [Ruby on Rails Directory Structure](http://www.tutorialspoint.com/ruby-on-rails/rails-directory-structure.htm)
-* [Ruby on Rails Guides](http://guides.rubyonrails.org/) - [Form Helpers](http://guides.rubyonrails.org/form_helpers.html)
-* [Ruby on Rails Docs](http://api.rubyonrails.org/) - [Url Helper - Link To](http://api.rubyonrails.org/classes/ActionView/Helpers/UrlHelper.html#method-i-link_to)
+* [Rails Guides on Routing](http://guides.rubyonrails.org/routing.html) - [Nested Resources](http://guides.rubyonrails.org/routing.html#nested-resources)
