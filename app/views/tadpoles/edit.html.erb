@@ -1,9 +1,5 @@
-<h1>Edit <%= @tadpole.name %></h1>
-<form action="/tadpoles/<%= @tadpole.id %>/update" method="post">
-  <label for="name">Name</label>
-  <input type="text" id="name" name="name" placeholder="<%= @tadpole.name %>">
-  <label for="color">Color</label>
-  <input type="text" id="color" name="color" placeholder="<%= @tadpole.color %>">
-  <input type="submit" value="update">
-</form><br>
+<h1>Edit <%= @tadpole.name %> the Tadpole</h1>
+
+<%= render 'form' %>
+
 <a href="/tadpoles">Cancel</a>

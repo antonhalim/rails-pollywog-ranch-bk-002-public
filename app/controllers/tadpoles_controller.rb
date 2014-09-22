@@ -1,5 +1,17 @@
 class TadpolesController < ApplicationController
-  before_action :set_tadpole, only: [:show, :edit, :update, :destroy]
+  before_action :set_tadpole, only: [:show, :edit, :update, :destroy, :evolve]
+
+  def evolve
+    @frog = Frog.new(:color => @tadpole.color, :name => @tadpole.name, :pond_id => @tadpole.pond.id)
+    respond_to do |format|
+      if @frog.save
+        @tadpole.destroy
+        format.html { redirect_to @frog, notice: '#{@frog.name} the Tadpole successfully evolved to a frog.' }
+      else
+        format.html { render "/tadpoles/#{@tadpole.id}" }
+      end
+    end    
+  end
 
   def index
     @tadpoles = Tadpole.all
@@ -9,10 +21,12 @@ class TadpolesController < ApplicationController
   end
 
   def new
+    @frog = Frog.find(set_frog)
     @tadpole = Tadpole.new
   end
 
   def edit
+    @frog = @tadpole.frog
   end
 
   def create
@@ -46,6 +60,10 @@ class TadpolesController < ApplicationController
   private
     def set_tadpole
       @tadpole = Tadpole.find(params[:id])
+    end
+
+    def set_frog
+      @frog = Frog.find(params[:frog_id])
     end
 
     def tadpole_params
