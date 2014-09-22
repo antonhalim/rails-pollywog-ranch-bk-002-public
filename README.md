@@ -24,7 +24,7 @@ After speaking with Darryl he has informed us that he has several ponds on his r
 * Once you mirgrations are done, start on the models.
 * Once the models are built, add the ActiveRecord associations.
 * If you get stuck refer to [Rails Active Record Documentation](http://guides.rubyonrails.org/active_record_basics.html) or take a look at the included solution branch with completed code.
-* You can refer to this link as a quick reference for the Rails 4 folder structure along the way: [http://www.tutorialspoint.com/ruby-on-rails/rails-directory-structure.htm](http://www.tutorialspoint.com/ruby-on-rails/rails-directory-structure.htm)
+* You can refer to this link as a quick reference for the Rails 4 folder structure along the way [here](http://www.tutorialspoint.com/ruby-on-rails/rails-directory-structure.htm).
 
 #### Running the App Locally
 * When your finished and all the specs are passing, go ahead and run the following commands from your terminal:
