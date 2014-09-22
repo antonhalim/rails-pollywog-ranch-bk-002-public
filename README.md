@@ -4,7 +4,7 @@ tags: rails, activerecord, associations, models
 resources: 4
 ---
 
-<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Kaulquappen_Tadpole_3.JPG/640px-Kaulquappen_Tadpole_3.JPG">
+![tadpoles and frogs](/app/assets/images/intro-image.jpeg)
 
 # Pollywog Ranch
 
