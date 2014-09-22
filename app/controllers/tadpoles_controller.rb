@@ -6,7 +6,7 @@ class TadpolesController < ApplicationController
     respond_to do |format|
       if @frog.save
         @tadpole.destroy
-        format.html { redirect_to @frog, notice: '#{@frog.name} the Tadpole successfully evolved to a frog.' }
+        format.html { redirect_to @frog, notice: "#{@frog.name} the Tadpole successfully evolved to a frog." }
       else
         format.html { render "/tadpoles/#{@tadpole.id}" }
       end

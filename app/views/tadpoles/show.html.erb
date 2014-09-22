@@ -1,11 +1,17 @@
-<h1><%= @tadpole.name %> the Tadpole</h1>
-<p>
-  <a href="/tadpoles/<%= @tadpole.id %>/evolve" class="btn btn-primary">Evolve to frog</a>
-</p>
-<p>Color: <%= @tadpole.color %></p>
-<p>Parent: <a href="/frogs/<%= @tadpole.frog.id %>"><%= @tadpole.frog.name %></a></p>
-<p>Lives: <a href="/ponds/<%= @tadpole.pond.id %>"><%= @tadpole.pond.name %></a></p>
+<div class="card">
+  <h1><%= @tadpole.name %> the Tadpole</h1>
+  <p>
+    <a href="/tadpoles/<%= @tadpole.id %>/evolve" class="btn btn-primary">Evolve to frog</a>
+  </p>
+  <p>Color: <%= @tadpole.color %></p>
+  <p>Parent: <a href="/frogs/<%= @tadpole.frog.id %>"><%= @tadpole.frog.name %></a></p>
+  <p>Lives: <a href="/ponds/<%= @tadpole.pond.id %>"><%= @tadpole.pond.name %></a></p>
 
-<a href="/tadpoles">Back</a> | 
-<a href="/tadpoles/<%= @tadpole.id %>/edit">Edit</a> | 
-<a href="/tadpoles/<%= @tadpole.id %>/destroy">Delete</a>
+  <a href="/tadpoles">Back</a> | 
+  <a href="/tadpoles/<%= @tadpole.id %>/edit">Edit</a> | 
+  <a href="/tadpoles/<%= @tadpole.id %>/destroy">Delete</a>
+</div>
+
+<div class="card">
+  <img src="http://<%= @tadpole.color %>-tadpole.jpg.to/" alt="Tadpole Picture" width="300">
+</div>
