@@ -10,7 +10,7 @@ resources: 4
 
 ## Goal
 
-Help Frog Rancher Darryl categorize and track all the ponds, frogs, and tadpoles on his ranch. To do this you will create models and fill in the missing ActiveRecord associations.
+Help Frog Rancher Darryl categorize and track all the ponds, frogs, and tadpoles on his ranch. To do this you will create migrations and models complete with ActiveRecord associations.
 
 ## Background 
 
