@@ -1,40 +1,38 @@
-# New Pollywog
+---
+language: ruby
+tags: sinatra, rails, activerecord, associations, models, views, controllers
+resources: 4
+---
 
-## Description
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Kaulquappen_Tadpole_3.JPG/640px-Kaulquappen_Tadpole_3.JPG">
 
-Add a short description of your app.
+# Pollywog Ranch
 
-## Screenshots
+## Goal
 
-Add some spiffy screenshots of your app here.
+Help Frog Rancher Darryl categorize and track all the ponds, frogs, and tadpoles on his ranch. To do this you will fill in the missing ActiveRecord associations and controller actions needed to form working relationships between the models.
 
-## Background
+## Background 
 
-Why did you want to make this app? What was your development process
-like?
+After speaking with Darryl he has informed us that he has several ponds on his ranch. Each pond has different frogs that live there. Some of those frogs have tadpole babies. The frogs all have the ability to have tadpoles at any given time and the tadpoles have the ability to evolve into frogs at any time. 
+## Instructions
 
-## Features
+# Part 1 - Associations
 
-Bullet point some of the key features of your app here.
+1. Fork this repo then clone that fork down to your local machine.
+2. Run `bundle install`
+3. Read this text:
+  * 
+4. Run `rspec`
+5. If you get stuck refer to [Rails Active Record Documentation](http://guides.rubyonrails.org/active_record_basics.html) or take a look at the included solution branch with completed code.
+6. You can refer to this link as a quick reference for the Rails 4 folder structure along the way: [http://www.tutorialspoint.com/ruby-on-rails/rails-directory-structure.htm](http://www.tutorialspoint.com/ruby-on-rails/rails-directory-structure.htm)
+7. Link Helpers: [http://api.rubyonrails.org/classes/ActionView/Helpers/UrlHelper.html#method-i-link_to](http://api.rubyonrails.org/classes/ActionView/Helpers/UrlHelper.html#method-i-link_to)
+8. Form Helpers: [http://guides.rubyonrails.org/form_helpers.html](http://guides.rubyonrails.org/form_helpers.html)
 
-## Usage
 
-How do users use your app?
+When your finished and all the specs are passing, push your code up to your remote and submit a pull request. Check back later on [Progress](progress.flatironschoo.com) to see if your code passes.
 
-## Development/Contribution
-
-Explain how people can contribute to your app. How should they write tests?
-Any things in particular you'd like to see in pull requests?
-
-## Future
-
-What features are you currently working on? Only mention things that you
-actually are implementing. No pie-in-the-sky-never-gonna-happen stuff.
-
-## Author
-
-Link to your blog, twitter, etc!
-
-## License
-
-New Pollywog is MIT Licensed. See LICENSE for details.
+## Resources
+* [Tutorials Point: Ruby on Rails](http://www.tutorialspoint.com/ruby-on-rails/) - [Ruby on Rails Directory Structure](http://www.tutorialspoint.com/ruby-on-rails/rails-directory-structure.htm)
+* [Ruby on Rails Guides](http://guides.rubyonrails.org/) - [Form Helpers](http://guides.rubyonrails.org/form_helpers.html)
+* [Ruby on Rails Docs](http://api.rubyonrails.org/) - [Url Helper - Link To](http://api.rubyonrails.org/classes/ActionView/Helpers/UrlHelper.html#method-i-link_to)
