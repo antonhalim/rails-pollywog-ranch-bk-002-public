@@ -1,6 +1,6 @@
 ---
 language: ruby
-tags: sinatra, rails, activerecord, associations, models, views, controllers
+tags: rails, activerecord, associations, models
 resources: 4
 ---
 
