@@ -19,7 +19,7 @@ After speaking with Darryl he has informed us that he has several ponds on his r
 ## Instructions
 
 #### Models and Associations
-* Run `rspec` to see what course to take. Keep in mind that for the association of tadpoles belonging to a pond through frog, you'll have to [delegate](http://stackoverflow.com/a/11457714).
+* Run `bundle install` then `rspec` to see what course to take. Keep in mind that for the association of tadpoles belonging to a pond through frog, you'll have to [delegate](http://stackoverflow.com/a/11457714).
 * If you get stuck refer to [Rails Active Record Documentation](http://guides.rubyonrails.org/active_record_basics.html) or take a look at the included solution branch with completed code.
 * You can refer to this link as a quick reference for the Rails 4 folder structure along the way: [http://www.tutorialspoint.com/ruby-on-rails/rails-directory-structure.htm](http://www.tutorialspoint.com/ruby-on-rails/rails-directory-structure.htm)
 * When your finished and all the specs are passing, go ahead and run the following commands from your terminal:
